@@ -1,0 +1,59 @@
+body {
+    background-color: #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.bat {
+    width: 1px;
+    height: 1px;
+    background: transparent;
+    /* Zoom maior para detalhes ficarem visíveis */
+    transform: scale(9); 
+    position: relative;
+    /* Velocidade exata do vídeo original */
+    animation: bat-wings 0.35s steps(1) infinite;
+}
+
+@keyframes bat-wings {
+    /* Frame 1: Asas para Cima (Nível Máximo de Detalhe) */
+    0% {
+        box-shadow: 
+            /* Cabeça e Orelhas Densas */
+            -2px -5px #333, 2px -5px #333, -2px -4px #333, -1px -4px #333, 0px -4px #333, 1px -4px #333, 2px -4px #333,
+            -1px -3px #333, 0px -3px #333, 1px -3px #333, -2px -3px #333, 2px -3px #333,
+            /* Corpo Gordo e Preenchido */
+            -3px -2px #333, -2px -2px #333, -1px -2px #333, 0px -2px #333, 1px -2px #333, 2px -2px #333, 3px -2px #333,
+            -3px -1px #333, -2px -1px #333, -1px -1px #333, 0px -1px #333, 1px -1px #333, 2px -1px #333, 3px -1px #333,
+            -3px 0px #333, -2px 0px #333, -1px 0px #333, 0px 0px #333, 1px 0px #333, 2px 0px #333, 3px 0px #333,
+            -2px 1px #333, -1px 1px #333, 0px 1px #333, 1px 1px #333, 2px 1px #333,
+            -1px 2px #333, 0px 2px #333, 1px 2px #333,
+            /* Asas Direita (Cima, Camada Dupla) */
+            3px -2px #333, 4px -3px #333, 5px -4px #333, 6px -5px #333, 7px -6px #333, 8px -7px #333,
+            9px -8px #333, 9px -7px #333, 8px -6px #333, 7px -5px #333, 6px -4px #333, 5px -3px #333, 4px -2px #333,
+            /* Asas Esquerda (Cima, Camada Dupla) */
+            -3px -2px #333, -4px -3px #333, -5px -4px #333, -6px -5px #333, -7px -6px #333, -8px -7px #333,
+            -9px -8px #333, -9px -7px #333, -8px -6px #333, -7px -5px #333, -6px -4px #333, -5px -3px #333, -4px -2px #333;
+    }
+    /* Frame 2: Asas para Baixo (Nível Máximo de Detalhe) */
+    50% {
+        box-shadow: 
+            /* Cabeça, Orelhas e Corpo (Igual ao frame 1) */
+            -2px -5px #333, 2px -5px #333, -2px -4px #333, -1px -4px #333, 0px -4px #333, 1px -4px #333, 2px -4px #333,
+            -1px -3px #333, 0px -3px #333, 1px -3px #333, -2px -3px #333, 2px -3px #333,
+            -3px -2px #333, -2px -2px #333, -1px -2px #333, 0px -2px #333, 1px -2px #333, 2px -2px #333, 3px -2px #333,
+            -3px -1px #333, -2px -1px #333, -1px -1px #333, 0px -1px #333, 1px -1px #333, 2px -1px #333, 3px -1px #333,
+            -3px 0px #333, -2px 0px #333, -1px 0px #333, 0px 0px #333, 1px 0px #333, 2px 0px #333, 3px 0px #333,
+            -2px 1px #333, -1px 1px #333, 0px 1px #333, 1px 1px #333, 2px 1px #333,
+            -1px 2px #333, 0px 2px #333, 1px 2px #333,
+            /* Asas Direita (Baixo, Camada Dupla) */
+            3px 1px #333, 4px 2px #333, 5px 3px #333, 6px 4px #333, 7px 5px #333, 8px 6px #333,
+            9px 7px #333, 9px 6px #333, 8px 5px #333, 7px 4px #333, 6px 3px #333, 5px 2px #333, 4px 1px #333,
+            /* Asas Esquerda (Baixo, Camada Dupla) */
+            -3px 1px #333, -4px 2px #333, -5px 3px #333, -6px 4px #333, -7px 5px #333, -8px 6px #333,
+            -9px 7px #333, -9px 6px #333, -8px 5px #333, -7px 4px #333, -6px 3px #333, -5px 2px #333, -4px 1px #333;
+    }
+}
