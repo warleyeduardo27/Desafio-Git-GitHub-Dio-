@@ -1,0 +1,2 @@
+#Estou utilizando o Vs code no ubuntu    
+Para visualizar, utilize a extensão live server e abrirá uma pág do google rodando o gif
